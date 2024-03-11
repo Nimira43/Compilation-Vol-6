@@ -1,0 +1,115 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url('./pexels-pixabay-41951.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    position: relative;
+}
+
+.dots-btn {
+    width: 20rem;
+    height: 20rem;
+    background-color: rgb(226, 142, 8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: inset 1.3rem 1.3rem  4rem rgba(235, 208, 135, 0.673), 0.9rem -0.9rem 1.3rem 1.1rem rgba(227, 168, 42, 0.673);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dot {
+    width: 2rem;
+    height: 2rem;
+    background: linear-gradient(123deg,skyblue, green);
+    border-radius: 50%;
+    transition: all 0.6s;
+}
+
+.change .dot-1 {
+    
+    width: 1.6rem;
+    height: 14rem;
+    border-radius: 2rem;
+    transform: rotate(-45deg) translate(4rem, 4rem);   
+}
+.change .dot-2 {
+    
+    opacity: 0;
+}
+.change .dot-3 {
+    
+    width: 1.6rem;
+    height: 14rem;
+    border-radius: 2rem;
+    transform: rotate(45deg) translate(-4rem, 4rem);
+}
+
+.nav-menu {
+    width: 0;
+    height: 7rem;
+    background-color: darkgoldenrod;
+    padding: 4rem 6rem;
+    border-radius: 10rem;
+    box-shadow: 0 4rem 12rem rgba(0, 5, 7, 0.396);
+    transition: width 0.6s;
+}
+
+.change .nav-menu {
+    width: 92rem;
+}
+
+.nav-menu-link {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s;
+}
+
+.change .nav-menu-link {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.6s 0.6s;
+
+}
+
+.nav-menu-link:nth-child(1) {
+    left: 8rem;
+}
+
+.nav-menu-link:nth-child(2) {
+    left: 26rem;
+}
+
+.nav-menu-link:nth-child(3) {
+    right: 26rem;
+}
+
+.nav-menu-link:nth-child(4) {
+    right: 8rem;
+}
+
+.nav-menu-link i {
+    font-size: 8rem;
+    color: darkred;
+}
