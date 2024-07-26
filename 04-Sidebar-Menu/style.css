@@ -4,16 +4,12 @@
   margin: 0px;
 }
 
-:root {
-  --main: (#ff4500);
-}
-
 body {
   font-family: 'Rajdhani', sans-serif;
 }
 
 .container {
-  background-image: linear-gradient(
+  background: linear-gradient(
     rgba(0, 0, 0, 0.8),
     rgba(0, 0, 0, 0.7)),
     url('./images/bg.jpg') no-repeat center;
@@ -25,8 +21,6 @@ body {
 .topnav {
   float: left;
   padding-right: 6px;
-  border-right: 1.5px dotted var(--main);
-  border-bottom: 1.5px dotted var(--main);
   border-bottom-right-radius: 10px;
 }
 
@@ -35,7 +29,7 @@ body {
   text-decoration: none;
   font-style: italic;
   font-weight: bolder;
-  background: -webkit-linear-gradient(black, gold);
+  background: -webkit-linear-gradient(orangered, gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -55,17 +49,16 @@ body {
 .line {
   width: 40px;
   height: 4px;
-  background: silver;
   margin: 5px;
   border-radius: 2rem;
-  border: 1px dotted gold;
-  background: linear-gradient(270deg, darkgoldenrod 0%, black 100%);
+  border: 1px dotted orangered;
+  background: linear-gradient(270deg, orangered 0%, gold 100%);
 }
 
 .topnav.responsive {
-  background: rgba(139, 0, 0, 0.601);
+  background: rgba(17, 17, 17, 0.8);
   border-radius: 0 25px 25px 0;
-  border-right: 1px dotted gold;
+  border-right: 1px dotted orangered;
   position: relative;
   width: 250px;
   z-index: +1;
@@ -81,3 +74,4 @@ body {
   margin: 40px;
   font-size: 27px;
 }
+
