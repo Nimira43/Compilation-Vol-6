@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0px;
+}
+
+:root {
+  --main: (#ff4500);
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.container {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.7)),
+    url('./bg.jpg') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 713px;
+}
+
+.topnav {
+  float: left;
+  padding-right: 6px;
+  border-right: 1.5px dotted var(--main);
+  border-bottom: 1.5px dotted var(--main);
+  border-bottom-right-radius: 10px;
+}
+
+.topnav a {
+  display: none;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(black, gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.topnav a.icon {
+  float: left;
+  display: block;
+  margin: 15px;
+}
+
+.topnav.responsive .icon {
+  float: left;
+  display: block;
+  margin: 15px;
+}
+
+.line {
+  width: 40px;
+  height: 4px;
+  background: silver;
+  margin: 5px;
+  border-radius: 2rem;
+  border: 1px dotted gold;
+  background: linear-gradient(270deg, darkgoldenrod 0%, black 100%);
+}
+
+.topnav.responsive {
+  background: rgba(139, 0, 0, 0.601);
+  border-radius: 0 25px 25px 0;
+  border-right: 1px dotted gold;
+  position: relative;
+  width: 250px;
+  z-index: +1;
+  height: 713px;
+  float: left;
+}
+
+.topnav.responsive a {
+  width: 100%;
+  float: none;
+  display: block;
+  text-decoration: none;
+  margin: 40px;
+  font-size: 27px;
+}
