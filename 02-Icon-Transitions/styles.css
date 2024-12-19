@@ -5,14 +5,14 @@
 }
 
 body {
-    background-color: darkgoldenrod;
-    font-family: 'Times New Roman', Times, serif;
+    background-color: #333;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 h1 {
     font-size: 70px;
     margin: 50px;
-    color: darkred;    
+    color: #eee;    
 }
 
 .container {
