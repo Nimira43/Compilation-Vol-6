@@ -5,14 +5,18 @@
 }
 
 body {
-    background-color: #333;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    background-color: #444;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
     font-size: 70px;
     margin: 50px;
-    color: #eee;    
+    color: #ddd;    
+    text-align: center;
 }
 
 .container {
@@ -43,10 +47,10 @@ i {
 }
 
 :root {
-    --discord: yellow;
-    --github: blue;
-    --youtube: red;
-    --linkedin: green;
+    --discord: #a4a407;
+    --github: #06347e;
+    --youtube: #d12222;
+    --linkedin: #1c961c;
 }
 
 .shadow {
